@@ -44,3 +44,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+group :test do
+  # テスト結果色付け Doc: https://github.com/kern/minitest-reporters
+  gem 'minitest-reporters', '~> 1.1', '>= 1.1.11'
+end
