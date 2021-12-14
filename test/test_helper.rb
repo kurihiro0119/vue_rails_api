@@ -15,7 +15,8 @@ class ActiveSupport::TestCase
 
   parallelize(workers: :number_of_processors)
 
-  # 削除
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-  # fixtures :all
+  def active_user
+    User.find_by(activated: true)
+  end
+
 end
